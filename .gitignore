@@ -1,0 +1,23 @@
+# Terraform
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+*.tfstate.*.backup
+terraform.tfvars
+*.tfplan
+override.tf
+override.tf.json
+
+# Lambda test output
+response.json
+
+# Lambda build output
+lambda/**/dist/
+lambda/**/*.zip
+
+# Credentials — never commit these
+*.pem
+*.env
+.env*
+credentials
